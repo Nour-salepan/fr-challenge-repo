@@ -24,7 +24,8 @@
 .hero__title {
   font-size: 3.5rem;
 }
-@media (max-width: 400px) {
+
+@media (max-width: 500px) {
   .hero__info {
     text-align: center;
   }
@@ -32,6 +33,7 @@
     font-size: 3rem;
   }
 }
+
 .hero__discription {
   color: var(--VeryDarkMagenta);
 }
@@ -45,7 +47,7 @@
   background-color: var(--LightGrayishMagenta);
   margin-bottom: 1em;
 }
-@media (min-width: 780px) {
+@media (min-width: 990px) {
   .rating-box {
     flex-direction: row;
   }
