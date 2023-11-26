@@ -83,8 +83,6 @@
   padding: 1em;
   color: var(--White);
   border-radius: 8px;
-  background-position: top bottom;
-  background-size: cover;
 }
 .author-info {
   gap: 1em;
