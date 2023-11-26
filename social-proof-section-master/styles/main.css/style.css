@@ -1,0 +1,109 @@
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  --ff: "League Spartan", sans-serif;
+  --fs: 0.9375rem;
+  --space: 1.5rem;
+}
+.hero {
+  background-image: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg);
+  background-size: cover;
+  background-position: center left;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-image: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg);
+  }
+}
+
+.hero__title {
+  font-size: 3.5rem;
+}
+@media (max-width: 400px) {
+  .hero__info {
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+.hero__discription {
+  color: var(--VeryDarkMagenta);
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 2em;
+  background-color: var(--LightGrayishMagenta);
+  margin-bottom: 1em;
+}
+@media (min-width: 780px) {
+  .rating-box {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 790px) {
+  .rating-box:nth-of-type(2) {
+    transform: translateX(1.5em);
+  }
+  .rating-box:nth-of-type(3) {
+    transform: translateX(2.5em);
+  }
+}
+.rates p {
+  color: var(--VeryDarkMagenta);
+  font-weight: bold;
+}
+
+/* features section styles  */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.features {
+  background-image: url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+  background-position: right bottom;
+  background-size: cover;
+}
+
+.feature {
+  flex: 1 1 20em;
+  background-color: var(--VeryDarkMagenta);
+  padding: 1em;
+  color: var(--White);
+  border-radius: 8px;
+  background-position: top bottom;
+  background-size: cover;
+}
+.author-info {
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.author-info img {
+  border-radius: 50%;
+  width: 60px;
+  aspect-ratio: 1;
+}
+.author-verification {
+  color: var(--SoftPink);
+}
+
+@media (min-width: 960px) {
+  .feature:nth-of-type(2) {
+    transform: translateY(1em);
+  }
+  .feature:nth-of-type(3) {
+    transform: translateY(1.6em);
+  }
+}

@@ -1,0 +1,103 @@
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  --ff: "League Spartan", sans-serif;
+  -fz: 0.9375rem;
+  --space: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.6;
+  font-family: var(--ff);
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--VeryDarkMagenta);
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+.gab-sm {
+  gap: 0.3em;
+}
+.gab-lg {
+  gap: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.ai {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space);
+}
+
+.p-inline {
+  padding-top: 2em;
+}
+.pb-sm {
+  padding-block: 0.5em;
+}
+.pt-1 {
+  padding-block: 1em;
+}
+.pt-2 {
+  padding-block: 2em;
+}
+.pt-3 {
+  padding-top: 3em;
+}
+
+.pb-3 {
+  padding-bottom: 3em;
+}
